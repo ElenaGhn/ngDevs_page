@@ -3,6 +3,9 @@ body {
     sans-serif;
   padding: 5%;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .container {
   background-image: url(../assets/working.jpg);
@@ -41,6 +44,22 @@ button {
   -o-border-radius: 10px;
 }
 
+.blue-button {
+  border: 1px solid rgb(74, 177, 251);
+  background-color: rgb(74, 177, 251);
+  border-radius: 10px;
+  color: whitesmoke;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px 40px;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
 .blue-button:hover {
   background-color: #96cc0069;
   color: black;
@@ -142,18 +161,20 @@ li {
 
 .png-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: row;
   padding: 30px 30px;
+  margin-top: 20px;
 }
 
 input {
   display: flex;
   justify-content: flex-start;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .png-img {
-  width: 50%;
+  width: 30%;
   height: auto;
 }
 

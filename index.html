@@ -40,7 +40,11 @@
           tehnologies in her free time. Wanna know more?
         </p>
         <div class="parent-1">
-          <button class="red-button" type="button">
+          <button
+            onclick="myFunction1()"
+            class="red-button"
+            type="button"
+          >
             Discover Lisa`s work
           </button>
         </div>
@@ -69,7 +73,11 @@
             <li>- Follows the 3 C Rulles: Code, Coffe, Croissant</li>
           </ul>
           <div class="parent-1">
-            <button class="red-button" type="button">
+            <button
+              onclick="myFunction2()"
+              class="red-button"
+              type="button"
+            >
               Who's Nihad?
             </button>
           </div>
@@ -86,6 +94,9 @@
 
     <section class="png-container">
       <div id="form-container">
+        <div class="png-img">
+          <img src="assets/laptop.png" alt="Laptop" />
+        </div>
         <form>
           <input id="bname" placeholder="Name" required />
           <input
@@ -106,9 +117,6 @@
           </div>
         </form>
       </div>
-      <div class="png-img">
-        <img src="assets/laptop.png" alt="Laptop" />
-      </div>
     </section>
 
     <!-- last section-->
@@ -120,6 +128,14 @@
       <p>Copyright © 2021 ngDevs | Design: Tooplate</p>
     </footer>
 
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+      function myFunction1() {
+        alert("This page contains information about Lisa's work!");
+      }
+
+      function myFunction2() {
+        alert("This page contains information about Nihad's work!");
+      }
+    </script>
   </body>
 </html>
