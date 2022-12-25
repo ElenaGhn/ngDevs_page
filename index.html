@@ -14,15 +14,19 @@
 
     <section id="introduction-section">
       <div class="circle">
-        <div id="circle-content-wrapper">
+        <div class="circle-content-wrapper">
           <h1>ng-Devs</h1>
           <h3>Who we are?</h3>
           <p class="first-section-text">
-            Looking for some help to create your Website or
-            Web-Application? Discover the Next generationn's
-            Full-Stack Devs...
+            Looking for some help to create your <br />
+            Website or Web-Application? Discover the Next
+            generationn's <br />Full-Stack Devs...
           </p>
-          <a href="#lisa-box" class="blue-background" type="button">
+          <a
+            href="#lisa-section"
+            class="blue-background"
+            type="button"
+          >
             Discover our work
           </a>
         </div>
@@ -31,7 +35,7 @@
 
     <!-- section 2-->
 
-    <section id="lisa-box">
+    <section id="lisa-section">
       <div class="container-png">
         <h2>Lisa</h2>
         <p>
@@ -43,16 +47,16 @@
           As a very curious person, she loves to discover new
           tehnologies in her free time. Wanna know more?
         </p>
-        <div class="parent-1 flex-container">
+        <div class="flex-container">
           <button
-            onclick="alertRedButton()"
+            onclick="alertSection()"
             class="red-background"
             type="button"
           >
             Discover Lisa`s work
           </button>
         </div>
-        <div class="parent-2 flex-container">
+        <div class="firs-nextDev flex-container">
           <a href="#nihad-box" class="blue-background" type="button">
             Next Dev
           </a>
@@ -66,7 +70,7 @@
     <!-- section 3 -->
 
     <section id="nihad-section">
-      <div class="circle">
+      <div class="circle circle-content-wrapper">
         <div id="nihad-box">
           <h2>Nihad</h2>
           <p>
@@ -78,7 +82,7 @@
             <li>- Can't stop learning</li>
             <li>- Follows the 3 C Rulles: Code, Coffe, Croissant</li>
           </ul>
-          <div class="parent-1 flex-container">
+          <div class="flex-container">
             <button
               onclick="alertBlueButton()"
               class="red-background"
@@ -87,7 +91,7 @@
               Who's Nihad?
             </button>
           </div>
-          <div class="parent-2 flex-container">
+          <div class="flex-container">
             <a
               href="#form-container"
               class="blue-background"
@@ -120,11 +124,17 @@
           >
           </textarea>
           <div class="button-send">
-            <button class="red-background" type="submit">Send</button>
+            <button
+              onclick="alertMessage()"
+              class="red-background"
+              type="submit"
+            >
+              Send
+            </button>
           </div>
         </form>
       </div>
-      <div class="png-img">
+      <div class="png-image">
         <img src="assets/laptop.png" alt="Laptop" />
       </div>
     </section>
@@ -143,12 +153,17 @@
     </footer>
 
     <script type="text/javascript">
-      function alertRedButton() {
+      function alertSection() {
         alert("This page contains information about Lisa's work!");
       }
 
       function alertBlueButton() {
         alert("This page contains information about Nihad's work!");
+      }
+      function alertMessage() {
+        alert(
+          'We have received your Message, we will contact you with more details as soon as possible'
+        );
       }
     </script>
   </body>
