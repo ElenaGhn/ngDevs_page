@@ -30,16 +30,16 @@ h3 {
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .blue-background,
 .red-background {
   border: 1px solid;
   border-radius: 10px;
-  color: black;
+  color: rgb(252, 249, 242);
   padding: 15px 32px;
-  margin: 15px 20px;
+  margin: 5%;
   font-size: 20px;
   text-align: center;
   cursor: pointer;
@@ -47,11 +47,11 @@ p {
 }
 
 .blue-background {
-  background-color: #0095bf;
+  background-color: #0381a4;
 }
 
 .red-background {
-  background-color: #cc0064;
+  background-color: #a30853;
 }
 
 button:hover {
@@ -88,8 +88,8 @@ button:hover {
 }
 
 .circle {
-  height: 34.375rem;
-  width: 34.375rem;
+  height: 32rem;
+  width: 32rem;
   background-color: white;
   border-radius: 100%;
   display: flex;
@@ -110,7 +110,7 @@ button:hover {
 }
 
 .png-image {
-  width: 31.25rem;
+  width: 30rem;
   text-align: center;
 }
 
@@ -138,8 +138,7 @@ li {
 #nihad-box > div:last-of-type,
 .firs-nextDev {
   justify-content: flex-end;
-  margin-right: 30%;
-  padding: 7%;
+  margin-right: 20%;
 }
 
 .png-container {
