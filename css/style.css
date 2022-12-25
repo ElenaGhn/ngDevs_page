@@ -3,21 +3,23 @@ body {
     sans-serif;
   padding: 5%;
 }
+
 html {
   scroll-behavior: smooth;
 }
 
-/*TODO: consider to use section:first-of-type here or use an ID*/
-.container {
+#introduction-section {
   background-image: url(../assets/working.jpg);
   height: 46.875rem;
   background-size: cover;
 }
 
-h1 {
+h1,
+h2 {
   color: #cc0064;
   font-size: 3.3rem;
 }
+
 h3 {
   color: #0095bf;
   font-size: 1.5rem;
@@ -28,57 +30,42 @@ p {
   font-size: 1.2rem;
 }
 
-button {
-  background-color: #0095bf;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  margin: 10px;
-  text-align: center;
-  text-decoration: none;
-  font-size: medium;
-  border-radius: 10px;
-  border: 1px solid #0095bf;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-
-.blue-button {
-  border: 1px solid rgb(74, 177, 251);
-  background-color: rgb(74, 177, 251);
+.blue-background,
+.red-background {
+  border: 1px solid;
   border-radius: 10px;
   color: whitesmoke;
   padding: 15px 32px;
   text-align: center;
   display: inline-block;
   font-size: 20px;
-  margin: 20px 40px;
+  margin: 15px 20px;
   cursor: pointer;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
 }
 
-/*TODO: put common styles to button:hover*/
-.blue-button:hover {
-  background-color: #96cc0069;
+.blue-background {
+  background-color: #0095bf;
+}
+.red-background {
+  background-color: #cc0064;
+}
+
+button:hover {
   color: black;
   border: 1px dotted black;
   cursor: pointer;
 }
 
-.red-button:hover {
-  background-color: #bcbf00;
-  color: black;
-  border: 1px dotted black;
-  cursor: pointer;
+.blue-background:hover {
+  background-color: rgb(118, 195, 223);
+}
+
+.red-background:hover {
+  background-color: rgb(186, 76, 94);
 }
 
 #circle-content-wrapper {
-  display: flex;
+  display: flex;55555555555
   align-items: center;
   flex-direction: column;
 }
@@ -88,7 +75,7 @@ button {
   justify-content: center;
   align-items: center;
 }
-
+/*TODO to move the circle to the center*/
 .circle {
   height: 34.375rem;
   width: 34.375rem;
@@ -122,29 +109,7 @@ img {
   height: auto;
 }
 
-/*TODO: put this style with the stlyes for h1 and h3*/
-h2 {
-  color: #0095bf;
-  font-size: 32px;
-}
-
-.parent-1 {
-  display: flex;
-}
-
-.red-button {
-  background-color: #cc0064;
-  margin-left: 10%;
-}
-
-.parent-2 {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 30%;
-  padding: 7%;
-}
-
-.container-1 {
+#nihad-section {
   background-image: url(../assets/working2.jpg);
   height: 46.875rem;
   background-size: cover;
@@ -152,31 +117,38 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+
 li {
   list-style-type: none;
   display: flex;
   font-size: 20px;
 }
 
+.flex-container {
+  display: flex;
+}
+
+#nihad-box > div:last-of-type {
+  justify-content: flex-end;
+  margin-right: 30%;
+  padding: 7%;
+}
+
 /*TODO: extract display flex in new class flex-container*/
 .parent-3 {
-  display: flex;
   justify-content: center;
 }
 
 .png-container {
-  display: flex;
   justify-content: space-around;
   flex-direction: row;
   padding: 30px 30px;
   margin-top: 20px;
 }
 
-/*TODO: the display: flex style only makes sense on container elements*/
+
 input {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
+  box-sizing: border-box;
 }
 
 .png-img {
@@ -184,33 +156,20 @@ input {
   height: auto;
 }
 
-/*TODO: aggregate the common styles from #bname, #contact-email, #message-text to one class*/
-#bname {
-  width: 35%;
+#form-container input,
+#form-container textarea {
+  display: block;
+  width: 20rem;
   margin-top: 20px;
   padding: 12px 20px;
-  box-sizing: border-box;
-  border: none;
-  border-bottom: 1px solid darkred;
-}
-
-#contact-email {
-  width: 35%;
-  margin-top: 20px;
-  padding: 12px 20px;
-  box-sizing: border-box;
+  font-family: inherit;
   border: none;
   border-bottom: 1px solid darkred;
 }
 
 #message-text {
-  width: 35%;
-  height: 100px;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  border: none;
-  border-bottom: 1px solid darkred;
   resize: vertical;
+  width: 17rem;
 }
 
 #footer-container {

@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!--TODO: add viewport and content attributes-->
     <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>ng-Devs</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- section 1-->
 
-    <section class="container">
+    <section id="introduction-section">
       <div class="circle">
         <div id="circle-content-wrapper">
           <h1>ng-Devs</h1>
@@ -19,9 +22,9 @@
             Web-Application? Discover the Next generationn's
             Full-Stack Devs...
           </p>
-          <button class="blue-button" type="button">
+          <a href="#lisa-box" class="blue-background" type="button">
             Discover our work
-          </button>
+          </a>
         </div>
       </div>
     </section>
@@ -40,17 +43,19 @@
           As a very curious person, she loves to discover new
           tehnologies in her free time. Wanna know more?
         </p>
-        <div class="parent-1">
+        <div class="parent-1 flex-container">
           <button
-            onclick="myFunction1()"
-            class="red-button"
+            onclick="alertRedButton()"
+            class="red-background"
             type="button"
           >
             Discover Lisa`s work
           </button>
         </div>
-        <div class="parent-2">
-          <button class="blue-button" type="button">Next Dev</button>
+        <div class="parent-2 flex-container">
+          <a href="#nihad-box" class="blue-background" type="button">
+            Next Dev
+          </a>
         </div>
       </div>
       <div class="png-image">
@@ -60,7 +65,7 @@
 
     <!-- section 3 -->
 
-    <section class="container-1">
+    <section id="nihad-section">
       <div class="circle">
         <div id="nihad-box">
           <h2>Nihad</h2>
@@ -73,19 +78,23 @@
             <li>- Can't stop learning</li>
             <li>- Follows the 3 C Rulles: Code, Coffe, Croissant</li>
           </ul>
-          <div class="parent-1">
+          <div class="parent-1 flex-container">
             <button
-              onclick="myFunction2()"
-              class="red-button"
+              onclick="alertBlueButton()"
+              class="red-background"
               type="button"
             >
               Who's Nihad?
             </button>
           </div>
-          <div class="parent-3">
-            <button class="blue-button" type="button">
+          <div class="parent-2 flex-container">
+            <a
+              href="#form-container"
+              class="blue-background"
+              type="button"
+            >
               Contact us
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -93,11 +102,8 @@
 
     <!-- Section 4 -->
 
-    <section class="png-container">
+    <section class="png-container flex-container">
       <div id="form-container">
-        <div class="png-img">
-          <img src="assets/laptop.png" alt="Laptop" />
-        </div>
         <form>
           <input id="bname" placeholder="Name" required />
           <input
@@ -114,27 +120,34 @@
           >
           </textarea>
           <div class="button-send">
-            <button class="red-button" type="submit">Send</button>
+            <button class="red-background" type="submit">Send</button>
           </div>
         </form>
+      </div>
+      <div class="png-img">
+        <img src="assets/laptop.png" alt="Laptop" />
       </div>
     </section>
 
     <!-- last section-->
 
     <footer id="footer-container">
-      <button class="blue-button" onclick="" type="button">
+      <a
+        href="#introduction-section"
+        class="blue-background"
+        type="button"
+      >
         Top
-      </button>
+      </a>
       <p>Copyright © 2021 ngDevs | Design: Tooplate</p>
     </footer>
 
     <script type="text/javascript">
-      function myFunction1() {
+      function alertRedButton() {
         alert("This page contains information about Lisa's work!");
       }
 
-      function myFunction2() {
+      function alertBlueButton() {
         alert("This page contains information about Nihad's work!");
       }
     </script>
